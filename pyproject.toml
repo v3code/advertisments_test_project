@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "advertisments"
+version = "0.1.0"
+description = ""
+authors = ["v3code <vitalik.w555@gmail.com>"]
+readme = "README.md"
+packages = [{include = "api"}]
+
+[tool.poetry.scripts]
+run-server = "api.app:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask = "^3.0.2"
+flask-sqlalchemy = "^3.1.1"
+python-dotenv = "^1.0.1"
+pydantic = "^2.6.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
